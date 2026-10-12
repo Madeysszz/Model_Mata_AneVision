@@ -1,0 +1,8 @@
+file,gender_input,n_valid_px,total_px,valid_ratio,hgb_predicted,status,threshold_used,margin_ke_threshold,flag_low_mask,flag_hgb_unphysiological,flag_borderline,flag_gender_missing,error
+test_image01.png,M,34946,246206,0.141938,12.98,Anemia,13.0,-0.02,0,0,1,0,
+test_image02.png,M,108495,164970,0.657665,15.46,Anemia,13.0,2.46,0,0,0,0,
+test_image03.png,M,109377,115624,0.945971,13.84,Normal,13.0,0.84,0,0,0,0,
+test_image04.jpeg,M,1925533,2027493,0.949711,17.02,Anemia,13.0,4.02,0,0,0,0,
+test_image05.jpeg,M,68587,90616,0.756897,12.86,Anemia,13.0,-0.14,0,0,1,0,
+test_image06.png,M,14667,15228,0.96316,12.88,Anemia,13.0,-0.12,0,0,1,0,
+test_image07.png,M,522530,645662,0.809293,11.79,Anemia,13.0,-1.21,0,0,0,0,

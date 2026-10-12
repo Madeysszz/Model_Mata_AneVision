@@ -1,0 +1,310 @@
+{
+  "dataset_size": 211,
+  "thresholds": {
+    "female": 12.0,
+    "male": 13.0
+  },
+  "cv_folds": 5,
+  "feature_sets": {
+    "S1_image_only": {
+      "feature_order": [
+        "mean_R",
+        "mean_G",
+        "mean_B",
+        "mean_L",
+        "mean_a",
+        "mean_b",
+        "mean_S",
+        "mean_V",
+        "std_a",
+        "std_b",
+        "std_S",
+        "n_valid_px"
+      ],
+      "models": {
+        "Ridge": {
+          "regression": {
+            "MAE": 1.4454,
+            "MAE_std": 0.2073,
+            "RMSE": 1.8027,
+            "R2": 0.4033
+          },
+          "classification": {
+            "accuracy": 0.7678,
+            "precision": 0.6881,
+            "recall": 0.8333,
+            "f1": 0.7538,
+            "confusion_matrix": [
+              [
+                87,
+                34
+              ],
+              [
+                15,
+                75
+              ]
+            ]
+          }
+        },
+        "GradientBoosting": {
+          "regression": {
+            "MAE": 1.6089,
+            "MAE_std": 0.2123,
+            "RMSE": 2.0574,
+            "R2": 0.2266
+          },
+          "classification": {
+            "accuracy": 0.7109,
+            "precision": 0.6526,
+            "recall": 0.6889,
+            "f1": 0.6703,
+            "confusion_matrix": [
+              [
+                88,
+                33
+              ],
+              [
+                28,
+                62
+              ]
+            ]
+          }
+        },
+        "RandomForest": {
+          "regression": {
+            "MAE": 1.4915,
+            "MAE_std": 0.1773,
+            "RMSE": 1.9057,
+            "R2": 0.336
+          },
+          "classification": {
+            "accuracy": 0.7678,
+            "precision": 0.7113,
+            "recall": 0.7667,
+            "f1": 0.738,
+            "confusion_matrix": [
+              [
+                93,
+                28
+              ],
+              [
+                21,
+                69
+              ]
+            ]
+          }
+        }
+      },
+      "X_shape": [
+        211,
+        12
+      ]
+    },
+    "S2_image_gender": {
+      "feature_order": [
+        "mean_R",
+        "mean_G",
+        "mean_B",
+        "mean_L",
+        "mean_a",
+        "mean_b",
+        "mean_S",
+        "mean_V",
+        "std_a",
+        "std_b",
+        "std_S",
+        "n_valid_px",
+        "is_female"
+      ],
+      "models": {
+        "Ridge": {
+          "regression": {
+            "MAE": 1.2962,
+            "MAE_std": 0.155,
+            "RMSE": 1.6463,
+            "R2": 0.5034
+          },
+          "classification": {
+            "accuracy": 0.7583,
+            "precision": 0.7097,
+            "recall": 0.7333,
+            "f1": 0.7213,
+            "confusion_matrix": [
+              [
+                94,
+                27
+              ],
+              [
+                24,
+                66
+              ]
+            ]
+          }
+        },
+        "GradientBoosting": {
+          "regression": {
+            "MAE": 1.4227,
+            "MAE_std": 0.1849,
+            "RMSE": 1.8609,
+            "R2": 0.3655
+          },
+          "classification": {
+            "accuracy": 0.7346,
+            "precision": 0.6771,
+            "recall": 0.7222,
+            "f1": 0.6989,
+            "confusion_matrix": [
+              [
+                90,
+                31
+              ],
+              [
+                25,
+                65
+              ]
+            ]
+          }
+        },
+        "RandomForest": {
+          "regression": {
+            "MAE": 1.3284,
+            "MAE_std": 0.1629,
+            "RMSE": 1.7286,
+            "R2": 0.4497
+          },
+          "classification": {
+            "accuracy": 0.7346,
+            "precision": 0.6771,
+            "recall": 0.7222,
+            "f1": 0.6989,
+            "confusion_matrix": [
+              [
+                90,
+                31
+              ],
+              [
+                25,
+                65
+              ]
+            ]
+          }
+        }
+      },
+      "X_shape": [
+        211,
+        13
+      ]
+    },
+    "S3_image_gender_age": {
+      "feature_order": [
+        "mean_R",
+        "mean_G",
+        "mean_B",
+        "mean_L",
+        "mean_a",
+        "mean_b",
+        "mean_S",
+        "mean_V",
+        "std_a",
+        "std_b",
+        "std_S",
+        "n_valid_px",
+        "is_female",
+        "age"
+      ],
+      "models": {
+        "Ridge": {
+          "regression": {
+            "MAE": 1.2944,
+            "MAE_std": 0.1559,
+            "RMSE": 1.6455,
+            "R2": 0.5041
+          },
+          "classification": {
+            "accuracy": 0.7536,
+            "precision": 0.7065,
+            "recall": 0.7222,
+            "f1": 0.7143,
+            "confusion_matrix": [
+              [
+                94,
+                27
+              ],
+              [
+                25,
+                65
+              ]
+            ]
+          }
+        },
+        "GradientBoosting": {
+          "regression": {
+            "MAE": 1.3907,
+            "MAE_std": 0.1521,
+            "RMSE": 1.8088,
+            "R2": 0.3996
+          },
+          "classification": {
+            "accuracy": 0.7204,
+            "precision": 0.6742,
+            "recall": 0.6667,
+            "f1": 0.6704,
+            "confusion_matrix": [
+              [
+                92,
+                29
+              ],
+              [
+                30,
+                60
+              ]
+            ]
+          }
+        },
+        "RandomForest": {
+          "regression": {
+            "MAE": 1.3052,
+            "MAE_std": 0.1567,
+            "RMSE": 1.688,
+            "R2": 0.474
+          },
+          "classification": {
+            "accuracy": 0.7346,
+            "precision": 0.6848,
+            "recall": 0.7,
+            "f1": 0.6923,
+            "confusion_matrix": [
+              [
+                92,
+                29
+              ],
+              [
+                27,
+                63
+              ]
+            ]
+          }
+        }
+      },
+      "X_shape": [
+        211,
+        14
+      ]
+    }
+  },
+  "best_per_set": {
+    "S1_image_only": {
+      "model": "Ridge",
+      "MAE": 1.4454
+    },
+    "S2_image_gender": {
+      "model": "Ridge",
+      "MAE": 1.2962
+    },
+    "S3_image_gender_age": {
+      "model": "Ridge",
+      "MAE": 1.2944
+    }
+  },
+  "age_delta_MAE_S3_vs_S2": -0.0018
+}
